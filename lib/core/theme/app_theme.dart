@@ -1,11 +1,11 @@
-import 'package:base_project_flutter/shared/res/resources.dart';
+import 'package:base_project_flutter/core/theme/res/resources.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
   final BuildContext context;
   AppTheme({required this.context});
 
-  get themeGeneral => ThemeData(
+  ThemeData get themeGeneral => ThemeData(
         appBarTheme: AppBarTheme(
           color: context.resources.color.primary,
           titleSpacing: context.resources.spacing.m,
@@ -60,11 +60,11 @@ class AppTheme {
         ),
       );
 
-  get themeLight => themeGeneral.copyWith(
+  ThemeData get themeLight => themeGeneral.copyWith(
         brightness: Brightness.light,
       );
 
-  get themeDark => themeGeneral.copyWith(
+  ThemeData get themeDark => themeGeneral.copyWith(
         brightness: Brightness.dark,
       );
 }

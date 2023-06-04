@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FontSize {
-  FontSize(this.size);
+class AppFontSize {
+  AppFontSize(this.size);
   final Size? size;
 
   double get xxs => size != null ? size!.width * 0.05 : 1;

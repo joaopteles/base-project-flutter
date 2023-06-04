@@ -1,8 +1,8 @@
-import 'package:base_project_flutter/config/env.dart';
+import 'package:base_project_flutter/core/configs/environment/env_values.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/home.dart';
-import 'shared/app_theme.dart';
+import 'presentation/home/home_page.dart';
+import 'core/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: AppTheme(context: context).themeLight,
       darkTheme: AppTheme(context: context).themeDark,
       debugShowCheckedModeBanner: !EnvValues().isProduction,
-      home: const MyHomePage(title: String.fromEnvironment('ENVIRONMENT')),
+      home: const HomePage(title: String.fromEnvironment('ENVIRONMENT')),
     );
   }
 }

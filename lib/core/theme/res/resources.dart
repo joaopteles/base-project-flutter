@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'app_color.dart';
-import 'app_dimensions.dart';
+import 'app_spacing.dart';
 import 'app_font_size.dart';
 
 extension AppContext on BuildContext {
   Resources get resources => Resources(MediaQuery.of(this).size);
 
-  double get larguraCelular => MediaQuery.of(this).size.width;
+  double get screenWidth => MediaQuery.of(this).size.width;
 
-  double get alturaCelular => MediaQuery.of(this).size.height;
+  double get screenHeight => MediaQuery.of(this).size.height;
 
   double get bottom => MediaQuery.of(this).viewInsets.bottom;
 
@@ -19,7 +19,7 @@ extension AppContext on BuildContext {
 
   double get bottomHeader => MediaQuery.of(this).viewPadding.bottom;
 
-  double get fontScalling => MediaQuery.of(this).textScaleFactor;
+  double get fontScaling => MediaQuery.of(this).textScaleFactor;
 }
 
 class Resources {
@@ -31,5 +31,5 @@ class Resources {
 
   AppSpacing get spacing => AppSpacing(size);
 
-  FontSize get fontSize => FontSize(size);
+  AppFontSize get fontSize => AppFontSize(size);
 }
