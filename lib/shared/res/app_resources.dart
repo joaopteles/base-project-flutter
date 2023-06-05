@@ -5,7 +5,7 @@ import 'app_dimensions.dart';
 import 'app_font_size.dart';
 
 extension AppContext on BuildContext {
-  AppResources get resources => AppResources(MediaQuery.of(this).size);
+  AppResources get resources => AppResources(MediaQuery.of(this).size, this);
 
   double get screenWidth => MediaQuery.of(this).size.width;
 
@@ -23,13 +23,14 @@ extension AppContext on BuildContext {
 }
 
 class AppResources {
-  AppResources(this.size);
+  AppResources(this.size, this.context);
 
   final Size? size;
+  final BuildContext context;
 
   AppColor get color => AppColor();
 
   AppDimensions get spacing => AppDimensions(size);
 
-  AppFontSize get fontSize => AppFontSize(size);
+  AppFontSize get fontSize => AppFontSize(size, context);
 }

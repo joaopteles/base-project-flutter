@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AppFontSize {
-  AppFontSize(this.size);
+  AppFontSize(this.size, this.context);
   final Size? size;
+  final BuildContext context;
+
+  double get scaleFactor => MediaQuery.of(context).textScaleFactor;
 
   double get xxs => size != null ? size!.width * 0.05 : 1;
   double get xs => size != null ? size!.width * 0.055 : 2;

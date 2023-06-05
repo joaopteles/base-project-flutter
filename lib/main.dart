@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'config/env_values.dart';
 import 'pages/home_page.dart';
-import 'shared/app_theme.dart';
+import 'shared/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());

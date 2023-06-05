@@ -1,3 +1,4 @@
+import 'package:base_project_flutter/shared/res/app_resources.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,8 +24,9 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(
-          widget.title,
+          '${widget.title} ${context.resources.fontSize.scaleFactor}',
           style: Theme.of(context).textTheme.headlineMedium,
+          textScaleFactor: context.resources.fontSize.scaleFactor,
         ),
       ),
       body: Center(
