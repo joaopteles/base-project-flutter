@@ -1,5 +1,6 @@
-import 'package:base_project_flutter/shared/res/app_resources.dart';
 import 'package:flutter/material.dart';
+
+import '/shared/res/app_resources.dart';
 
 class AppTheme {
   final BuildContext context;
