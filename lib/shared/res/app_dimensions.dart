@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-class AppSpacing {
-  AppSpacing(this.size);
+class AppDimensions {
+  AppDimensions(this.size);
   final Size? size;
 
   double get xxs => size != null ? size!.width * 0.005 : 1;
