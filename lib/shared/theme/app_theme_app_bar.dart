@@ -10,6 +10,6 @@ class AppThemeAppBar {
         color: context.resources.color.primary,
         titleSpacing: context.resources.spacing.m,
         centerTitle: true,
-        elevation: 0,
+        elevation: 20,
       );
 }

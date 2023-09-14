@@ -8,6 +8,6 @@ class AppThemeIcon {
 
   IconThemeData get appIconTheme => IconThemeData(
         color: context.resources.color.primary,
-        size: context.resources.fontSize.s,
+        size: context.resources.fontSize.xl,
       );
 }

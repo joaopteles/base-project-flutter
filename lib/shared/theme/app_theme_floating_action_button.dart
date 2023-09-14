@@ -8,10 +8,7 @@ class AppThemeFloatingActionButton {
 
   FloatingActionButtonThemeData get appFloatingActionButtonThemeData =>
       FloatingActionButtonThemeData(
-        backgroundColor: context.resources.color.background,
+        backgroundColor: context.resources.color.primary,
         iconSize: context.resources.fontSize.m,
-        shape: BeveledRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
       );
 }
