@@ -18,6 +18,11 @@ jobs:
         cat lib/test.json
       shell: bash
 
+    - name: Listar Conteúdo da Pasta lib antes da alteração
+      run: |
+        ls -la lib/
+      shell: bash
+
     - name: Decodificar Conteúdo Base64
       id: decode
       run: |
@@ -27,5 +32,10 @@ jobs:
     - name: Visualizar Alterações no Arquivo JSON
       run: |
         cat lib/test.json
+      shell: bash
+
+    - name: Listar Conteúdo da Pasta lib
+      run: |
+        ls -la lib/
       shell: bash
 
