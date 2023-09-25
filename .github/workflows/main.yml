@@ -26,8 +26,8 @@ jobs:
 
     - name: Commit e Push das Alterações
       run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "joaosud10.jp@gmail.com"
+        git config --global user.name "Joao"
         git add arquivo_modificado.json # ou o nome do arquivo que você alterou
         git commit -m "Atualização do arquivo JSON"
         git push
