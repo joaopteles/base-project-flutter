@@ -26,6 +26,6 @@ jobs:
 
     - name: Visualizar Alterações no Arquivo JSON
       run: |
-        cat lib\test.json
+        cat lib/test.json
       shell: bash
 
