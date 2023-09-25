@@ -13,6 +13,11 @@ jobs:
     - name: Checkout do Código
       uses: actions/checkout@v2
 
+    - name: Visualizar Alterações no Arquivo JSON antes da alteração
+      run: |
+        cat lib\test.json
+      shell: bash
+
     - name: Decodificar Conteúdo Base64
       id: decode
       run: |
