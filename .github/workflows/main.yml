@@ -13,15 +13,15 @@ jobs:
     - name: Checkout do Código
       uses: actions/checkout@v2
 
-    - name: Decodificar Arquivo Base64
+    - name: Decodificar Conteúdo Base64
       id: decode
       run: |
-        echo ${{ secrets.TEST_BASE64 }} | base64 -d > test.json
+        echo "${{ secrets.TEST_BASE64 }}" | base64 -d > lib\test.json
       shell: bash
 
-    - name: Alterar o Arquivo JSON
+    - name: Visualizar Alterações no Arquivo JSON
       run: |
-        echo "${{ secrets.ARQUIVO_JSON_BASE64 }}" | base64 -d > test.json
+        cat lib\test.json
       shell: bash
 
     - name: Visualizar Alterações no Arquivo JSON
