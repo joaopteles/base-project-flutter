@@ -15,7 +15,7 @@ jobs:
 
     - name: Visualizar o Arquivo antes da alteração
       run: |
-        cat lib\test.json
+        cat lib/test.json
       shell: bash
 
     - name: Decodificar Conteúdo Base64
