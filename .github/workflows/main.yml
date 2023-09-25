@@ -26,7 +26,6 @@ jobs:
 
     - name: Visualizar Alterações no Arquivo JSON
       run: |
-        jq '.Teste = "novo_valor"' test.json > test.json
-        cat test.json # Exibe o conteúdo do arquivo
+        cat test.json
       shell: bash
 
