@@ -24,11 +24,9 @@ jobs:
         echo "${{ secrets.ARQUIVO_JSON_BASE64 }}" | base64 -d > test.json
       shell: bash
 
-    - name: Commit e Push das Alterações
+    - name: Visualizar Alterações no Arquivo JSON
       run: |
-        git config --global user.email "joaosud10.jp@gmail.com"
-        git config --global user.name "Joao"
-        git add .
-        git commit -m "Atualização do arquivo JSON"
-        git push
+        jq '.Teste = "novo_valor"' test.json > test.json
+        cat test.json # Exibe o conteúdo do arquivo
       shell: bash
+
