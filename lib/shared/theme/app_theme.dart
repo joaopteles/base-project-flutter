@@ -8,6 +8,7 @@ import 'app_theme_button.dart';
 
 class AppTheme {
   final BuildContext context;
+
   AppTheme({required this.context});
 
   ThemeData get themeGeneral => ThemeData(

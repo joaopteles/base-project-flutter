@@ -12,16 +12,6 @@
             ]
         },
         {
-            "name": "qa",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile",
-            "args": [
-                "--dart-define",
-                "ENVIRONMENT=Qa"
-            ]
-        },
-        {
             "name": "prod",
             "request": "launch",
             "type": "dart",

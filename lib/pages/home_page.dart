@@ -22,18 +22,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(
-          '${widget.title} ${context.resources.fontSize.scaleFactor}',
-          style: Theme.of(context).textTheme.headlineMedium,
-          textScaleFactor: context.resources.fontSize.scaleFactor,
+          widget.title,
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                fontSize: context.resources.fontSize.xxs,
+              ),
         ),
       ),
+      backgroundColor: context.resources.color.background,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const SizedBox(child: Icon(Icons.add_a_photo_outlined)),
+            const Icon(Icons.add_a_photo_outlined),
             Text(
               'You have pushed the button this many times:',
               textAlign: TextAlign.center,
@@ -42,14 +43,13 @@ class _HomePageState extends State<HomePage> {
             Text(
               '$_counter',
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headlineSmall,
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
     );
