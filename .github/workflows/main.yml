@@ -21,7 +21,7 @@ jobs:
     - name: Decodificar Conteúdo Base64
       id: decode
       run: |
-        echo "${{ secrets.TEST_BASE64 }}" | base64 -d > lib\test.json
+        echo "${{ secrets.TEST_BASE64 }}" | base64 -d > lib/test.json
       shell: bash
 
     - name: Visualizar Alterações no Arquivo JSON
