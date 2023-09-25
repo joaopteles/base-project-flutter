@@ -1,0 +1,41 @@
+name: Alterar JSON com Base64
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  alterar-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do Código
+      uses: actions/checkout@v2
+
+    - name: Visualizar o Arquivo antes da alteração
+      run: |
+        cat lib/test.json
+      shell: bash
+
+    - name: Listar Conteúdo da Pasta lib antes da alteração
+      run: |
+        ls -la lib/
+      shell: bash
+
+    - name: Decodificar Conteúdo Base64
+      id: decode
+      run: |
+        echo "${{ secrets.TEST_BASE64 }}" | base64 -d > lib/test.json
+      shell: bash
+
+    - name: Visualizar Alterações no Arquivo JSON
+      run: |
+        cat lib/test.json
+      shell: bash
+
+    - name: Listar Conteúdo da Pasta lib
+      run: |
+        ls -la lib/
+      shell: bash
+
