@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'app_color.dart';
 import 'app_dimensions.dart';
 import 'app_font_size.dart';
 
@@ -25,8 +24,6 @@ class AppResources {
 
   final Size? size;
   final BuildContext context;
-
-  AppColor get color => AppColor();
 
   AppDimensions get spacing => AppDimensions(size);
 

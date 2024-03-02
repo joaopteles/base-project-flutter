@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Project Base',
       theme: AppTheme(context: context).themeLight,
       darkTheme: AppTheme(context: context).themeDark,
+      themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: EnvValues().isProduction,
       home: HomePage(title: EnvValues.environment.toString()),
     );

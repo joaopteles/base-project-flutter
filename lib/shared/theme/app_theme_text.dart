@@ -10,32 +10,32 @@ class AppThemeText {
         headlineLarge: TextStyle(
           fontSize: context.resources.fontSize.l,
           fontWeight: FontWeight.w900,
-          color: context.resources.color.secondary,
+          color: Theme.of(context).colorScheme.primary,
         ),
         headlineMedium: TextStyle(
           fontSize: context.resources.fontSize.m,
           fontWeight: FontWeight.w500,
-          color: context.resources.color.secondary,
+          color: Theme.of(context).colorScheme.primary,
         ),
         headlineSmall: TextStyle(
           fontSize: context.resources.fontSize.s,
           fontWeight: FontWeight.w100,
-          color: context.resources.color.secondary,
+          color: Theme.of(context).colorScheme.primary,
         ),
         bodyLarge: TextStyle(
           fontSize: context.resources.fontSize.l,
           fontWeight: FontWeight.w900,
-          color: context.resources.color.secondary,
+          color: Theme.of(context).colorScheme.primary,
         ),
         bodyMedium: TextStyle(
           fontSize: context.resources.fontSize.m,
           fontWeight: FontWeight.w500,
-          color: context.resources.color.secondary,
+          color: Theme.of(context).colorScheme.primary,
         ),
         bodySmall: TextStyle(
           fontSize: context.resources.fontSize.s,
           fontWeight: FontWeight.w100,
-          color: context.resources.color.secondary,
+          color: Theme.of(context).colorScheme.primary,
         ),
       );
 }

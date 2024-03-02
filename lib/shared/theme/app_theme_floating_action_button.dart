@@ -1,4 +1,3 @@
-import 'package:base_project_flutter/shared/res/app_resources.dart';
 import 'package:flutter/material.dart';
 
 class AppThemeFloatingActionButton {
@@ -8,7 +7,6 @@ class AppThemeFloatingActionButton {
 
   FloatingActionButtonThemeData get appFloatingActionButtonThemeData =>
       FloatingActionButtonThemeData(
-        backgroundColor: context.resources.color.primary,
-        iconSize: context.resources.fontSize.m,
+        backgroundColor: Theme.of(context).colorScheme.primary,
       );
 }

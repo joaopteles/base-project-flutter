@@ -21,29 +21,32 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          widget.title,
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontSize: context.resources.fontSize.xxs,
-              ),
-        ),
-      ),
-      backgroundColor: context.resources.color.background,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Expanded(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            const Icon(Icons.add_a_photo_outlined),
-            Text(
-              'You have pushed the button this many times:',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyMedium,
+            SizedBox(
+              width: context.resources.spacing.xl,
+              child: ColoredBox(
+                color: Theme.of(context).colorScheme.primary,
+                child: Column(children: [
+                  IconButton(
+                    onPressed: _incrementCounter,
+                    icon: const Icon(
+                      Icons.dashboard,
+                    ),
+                  )
+                ]),
+              ),
             ),
-            Text(
-              '$_counter',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyMedium,
+            Expanded(
+              child: Center(
+                child: Text(
+                  '$_counter',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+              ),
             ),
           ],
         ),

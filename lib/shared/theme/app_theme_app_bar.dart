@@ -7,7 +7,7 @@ class AppThemeAppBar {
   final BuildContext context;
 
   AppBarTheme get appBarTheme => AppBarTheme(
-        color: context.resources.color.primary,
+        color: Theme.of(context).colorScheme.primary,
         titleSpacing: context.resources.spacing.m,
         centerTitle: true,
         elevation: 20,
