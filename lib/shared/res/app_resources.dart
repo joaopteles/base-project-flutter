@@ -18,8 +18,6 @@ extension AppContext on BuildContext {
   double get topHeader => MediaQuery.of(this).viewPadding.top;
 
   double get bottomHeader => MediaQuery.of(this).viewPadding.bottom;
-
-  double get fontScaling => MediaQuery.of(this).textScaleFactor;
 }
 
 class AppResources {

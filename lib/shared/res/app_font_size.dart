@@ -5,7 +5,7 @@ class AppFontSize {
   final Size? size;
   final BuildContext context;
 
-  double get scaleFactor => MediaQuery.of(context).textScaleFactor;
+  TextScaler get scaleFactor => MediaQuery.of(context).textScaler;
 
   double get xxs => size != null ? size!.width * 0.05 : 1;
   double get xs => size != null ? size!.width * 0.055 : 2;
