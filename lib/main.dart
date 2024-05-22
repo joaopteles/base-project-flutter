@@ -1,8 +1,8 @@
-import 'package:base_project_flutter/config/env_values.dart';
+import 'package:base_project_flutter/core/common/env_values.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/home_page.dart';
-import 'shared/theme/app_theme.dart';
+import 'presentation/pages/home/home_page.dart';
+import 'presentation/shared/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());

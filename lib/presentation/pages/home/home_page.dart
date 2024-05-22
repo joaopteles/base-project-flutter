@@ -1,4 +1,4 @@
-import 'package:base_project_flutter/shared/res/app_resources.dart';
+import 'package:base_project_flutter/presentation/shared/res/app_resources.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

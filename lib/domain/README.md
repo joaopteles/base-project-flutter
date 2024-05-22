@@ -1,0 +1,3 @@
+# domain
+
+ The domain layer is responsible for encapsulating complex business logic, or simple business logic that is reused by multiple ViewModels like Usecase.

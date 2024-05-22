@@ -1,8 +1,8 @@
-import 'package:base_project_flutter/shared/theme/app_theme_app_bar.dart';
-import 'package:base_project_flutter/shared/theme/app_theme_color_scheme.dart';
-import 'package:base_project_flutter/shared/theme/app_theme_floating_action_button.dart';
-import 'package:base_project_flutter/shared/theme/app_theme_icon.dart';
-import 'package:base_project_flutter/shared/theme/app_theme_text.dart';
+import 'package:base_project_flutter/presentation/shared/theme/app_theme_app_bar.dart';
+import 'package:base_project_flutter/presentation/shared/theme/app_theme_color_scheme.dart';
+import 'package:base_project_flutter/presentation/shared/theme/app_theme_floating_action_button.dart';
+import 'package:base_project_flutter/presentation/shared/theme/app_theme_icon.dart';
+import 'package:base_project_flutter/presentation/shared/theme/app_theme_text.dart';
 import 'package:flutter/material.dart';
 
 import 'app_theme_button.dart';
