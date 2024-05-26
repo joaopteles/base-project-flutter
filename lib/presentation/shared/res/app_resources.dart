@@ -25,7 +25,7 @@ class AppResources {
   final Size? size;
   final BuildContext context;
 
-  AppDimensions get spacing => AppDimensions(size);
+  AppDimensions get spacing => AppDimensions();
 
-  AppFontSize get fontSize => AppFontSize(size, context);
+  AppFontSize get fontSize => AppFontSize();
 }
