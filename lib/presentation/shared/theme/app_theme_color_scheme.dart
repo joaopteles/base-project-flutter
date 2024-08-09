@@ -11,8 +11,6 @@ class AppThemeColorScheme {
         onSecondary: Colors.black,
         error: Colors.red,
         onError: Colors.white,
-        background: Color(0xFFF5F5F5),
-        onBackground: Colors.black,
         surface: Color(0xFFFFFFFF),
         onSurface: Colors.black,
       );
@@ -25,8 +23,6 @@ class AppThemeColorScheme {
         onSecondary: Colors.black,
         error: Colors.red,
         onError: Colors.white,
-        background: Color(0xFF121212),
-        onBackground: Colors.white,
         surface: Color(0xFF1E1E1E),
         onSurface: Colors.white,
       );
